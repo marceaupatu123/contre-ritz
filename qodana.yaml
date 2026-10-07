@@ -1,0 +1,26 @@
+#-------------------------------------------------------------------------------#
+#               Qodana analysis is configured by qodana.yaml file               #
+#             https://www.jetbrains.com/help/qodana/qodana-yaml.html            #
+#-------------------------------------------------------------------------------#
+
+#################################################################################
+#              WARNING: Do not store sensitive information in this file,        #
+#               as its contents will be included in the Qodana report.          #
+#################################################################################
+
+version: "1.0"
+
+# Profil d'inspections complet (détecte bugs, style, perfs, etc.)
+profile:
+  name: qodana.recommended
+
+# JDK ciblé
+projectJDK: "25"
+
+# Image gratuite Community (sans licence requise)
+linter: jetbrains/qodana-jvm-community:2025.2
+
+# Quality Gate : fait échouer le run (code d'erreur non-zéro) dès qu'un problème est détecté
+failureConditions:
+  severityThresholds:
+    any: 0
