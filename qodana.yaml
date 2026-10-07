@@ -15,7 +15,7 @@ profile:
   name: qodana.recommended
 
 # JDK ciblé
-projectJDK: "25"
+projectJDK: "21"
 
 # Image gratuite Community (sans licence requise)
 linter: jetbrains/qodana-jvm-community:2025.2
